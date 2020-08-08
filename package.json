@@ -1,0 +1,27 @@
+{
+  "name": "nextlevelweek2",
+  "version": "1.0.0",
+  "description": "This is the repository for the Rocketseats' Next Level Week 2. 🚀🚀",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThiagoBuen/NextLevelWeek2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ThiagoBuen/NextLevelWeek2/issues"
+  },
+  "homepage": "https://github.com/ThiagoBuen/NextLevelWeek2#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

@@ -96,9 +96,14 @@ async function saveClasses(req,ans){
     }
 }
 
+function pageScheduleSuccess(req, ans){
+    return ans.render("schedule-success.html")
+}
+
 module.exports = {
     pageLanding,
     pageStudy,
     pageGiveClass,
-    saveClasses  
+    saveClasses,
+    pageScheduleSuccess
 }

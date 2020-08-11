@@ -1,4 +1,4 @@
-const { pageLanding, pageStudy, pageGiveClass, saveClasses } = require('./pages')
+const { pageLanding, pageStudy, pageGiveClass, saveClasses, pageScheduleSuccess } = require('./pages')
 
 const express = require('express')
 const server = express()
@@ -23,6 +23,8 @@ server.get("/study", pageStudy);
 server.get("/give-classes", pageGiveClass);
 
 server.post("/save-classes", saveClasses);
+
+server.get("/schedule-success", pageScheduleSuccess)
 
 
 

@@ -6,7 +6,7 @@
     color: var(--color-text-in-primary);
 }
 
-.logo-container.img {
+.logo-container .img {
     height: 10rem;   
 }
 

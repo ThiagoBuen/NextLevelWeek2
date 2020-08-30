@@ -8,7 +8,7 @@
 
         <link rel="stylesheet" href="/styles/main.css">
         <link rel="stylesheet" href="/styles/partials/page-give-classes.css">
-        <link rel="stylesheet" href="/styles/partials/header.css"
+        <link rel="stylesheet" href="/styles/partials/header.css">
         <link rel="stylesheet" href="/styles/partials/forms.css">
 
          
@@ -26,8 +26,9 @@
                     </a>
                     <img src="/images/logo.svg" alt="Proffy">
                 </div>
+                
                 <div class="header-content">
-                    <strong>Que incrível que você quer dar aulas</strong>
+                    <strong>Que incrível que você quer dar aulas!</strong>
                     <p> O primeiro passo é preencher esse formulário de inscrição </p>
                 </div>
             </header>
@@ -44,12 +45,12 @@
 
                         <div class="input-block">
                             <label for="avatar">Link da sua foto <small>(comece com https://)</small></label>
-                            <input name="avatar" id="avatar"  type="url" required>
+                            <input name="avatar" id="avatar" required type="url">
                         </div>
 
                         <div class="input-block">
-                            <label for="whatsapp">Whatsapp</label>
-                            <input name="whatsapp" id="whatsapp" type="number" required>
+                            <label for="whatsapp">Whatsapp <small>(somente número)</small></label>
+                            <input name="whatsapp" id="whatsapp" required type="number">
                         </div>
 
                         <div class="textarea-block">
@@ -62,6 +63,7 @@
                         <legend>
                             Sobre a aula
                         </legend>
+
                         <div class="select-block">
                             <label for="subject">Matéria</label>
                             <select name="subject" id="subject" required>
@@ -73,11 +75,13 @@
                                 {%endfor%}
                             </select>
                         </div>
+
                         <div class="input-block">
                             <label for="cost"> Custo da sua hora/aula <small>(R$) </small>
                             </label>
                             <input name="cost" id="cost" type="number" required>
                         </div>
+
                     </fieldset>
 
                     <fieldset id="schedule-items">
@@ -87,10 +91,11 @@
                                 + Novo Horário
                             </button>
                         </legend>
+                        
                         <div class="schedule-item">
                             
                             <div class="select-block">
-                                <label for="week-day">Dia da semana</label>
+                                <label for="weekday">Dia da semana</label>
                                 <select name="weekday[]" required>
                                     <option value="">Selecione uma opção</option>
                                     {%for weekday in weekdays %}
@@ -110,6 +115,7 @@
                                 <label for="time_to">Até</label>
                                 <input type="time" name="time_to[]" required>
                             </div>
+
                         </div>
 
                     </fieldset>
@@ -122,7 +128,7 @@
                         Preencha todos os dados                        
                     </p>
 
-                    <button form="create-class" type="submit">Salvar cadastro</button>
+                    <button type="submit" form="create-class">Salvar cadastro</button>
 
                 </footer>
             </main>

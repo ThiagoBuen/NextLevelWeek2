@@ -7,32 +7,29 @@
     justify-content: center;
     background-image: url("/images/success-background.svg");
     background-repeat: no-repeat;
-
-}
-
-
-#page-schedule-success .content{
-    display: flex;
-    justify-content: center;
     margin: 3.2rem 0;
+
 }
 
-#page-schedule-success .content strong{
-    color: var(--color-title-in-primary);
-    line-height: 5rem;
-    margin-top: 0.8rem;
-    font: 600 4rem Archivo;
-}
-
-#page-schedule-success .content p{
+#page-schedule-success strong{
     color: var(--color-text-in-primary);
-    font: 600 1.5rem Archivo;
-    line-height: 5rem;
+    font: 600 3rem Archivo;
+    line-height: 4rem;
     margin-top: 0.8rem;
+    max-width: 25rem;
+
 }
 
-#page-schedule-success main .content .success-check{
-    width: 15rem;
+#page-schedule-success p{
+    color: var(--color-line-in-white);
+    line-height: 3.5rem;
+    margin-top: 0.8rem;
+    font: 600 2rem Archivo;
+    max-width: 75rem;
+}
+
+#page-schedule-success .success-check{
+    width: 10rem;
 }
 
 #page-schedule-success main .button-container a{
